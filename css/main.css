@@ -75,4 +75,24 @@ a:hover {
     text-decoration-color: rgb(181, 181, 181);
 }
 
+.about-me {
+    height: 100vh;
+
+}
+
+.about-me-text {
+    width: 50%;
+    margin: 0 auto;
+
+}
+.about-me-picture {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin: 0 20px;
+}
+
+/* PROFILE SECTION */
+
 
