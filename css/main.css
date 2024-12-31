@@ -10,20 +10,8 @@ a {
     cursor: pointer;
 }
 
-h1 {
-    color: red;
-    font-size: 0.9;
-    text-align: center;
-}
 
-/* ABOUT ME*/
-.about-me p {
-    color: black;
-    font-size: 0.8rem;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-}
+/* NAVIGATION BAR */
 
 .header-main {
     width: 100%;
@@ -76,15 +64,44 @@ a:hover {
     text-decoration-color: rgb(181, 181, 181);
 }
 
+/* ABOUT ME SECTION */
+
+.about-me p {
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
 .about-me {
     height: 100vh;
     background-color: ;
 }
 
-.about-me-text {
+.oki .section-text-p1 {
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+.oki .title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 60p;
+    font-style: italic;
+}
+
+.oki .section-text-p2 {
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+.oki .about-me-text {
     width: 40%;
     margin: 0 auto;
+    margin-top: 10px;
 }
+
 .about-me-picture {
     width: 200px;
     height: 200px;
@@ -96,9 +113,56 @@ a:hover {
     margin-top: 50px;
 }
 
-.oki {
 
+/* PROJECTS SECTION */
+
+/*
+.projects .projects-description {
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
 }
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+}
+.projects .projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+*/
+
+.projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.projects .projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projects .project-1 {
+    width: 300px;
+    height: 300px;
+    background-color: beige;
+    /* Remove flex properties from individual boxes */
+    margin: 10px;
+}
+
 
 /* PROFILE SECTION */
 
