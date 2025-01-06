@@ -11,8 +11,6 @@ a {
 }
 
 
-
-
 /* NAVIGATION BAR */
 
 .header-main {
@@ -214,191 +212,33 @@ text-align: center;
 .footer-sitemap li {
     margin: 0 20px;
 }
-
-/*
-.footer-main {
-    width: 100%;
-    padding: 60px 0 100px;
-    background-color: #474954;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-.footer-sitemap {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-}
-
-
-
-.footer-sitemap ul:nth-child(1) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    padding: 0;
-    margin: 0; 
-    color: rgb(181, 181, 181);
-}
-
-.footer-sitemap ul:nth-child(1) li {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: underline;
-    text-underline-offset: 0.2rem;
-}
-
-.footer-sitemap ul:nth-child(1) {
-    display: flex;
-    justify-content: center;
-    
-}
-
-
-.footer-sitemap ul:nth-child(2) li {
-    clear: both;
-    float: right;
-    margin: 5px 20px 0;
-    color: rgb(181, 181, 181);
-    text-decoration: underline;
-    text-underline-offset: 0.2rem;
-}
-
-
-/*
-.footer-main {
-    background-color: #474954;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    height: 50vh;
-}
-
-.footer-links {
-    background-color: red;
-    flex-basis: 50%;
-    text-align: center;
-    bottom: 0;
-}
-
-.footer-links ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.contact-information {
-    background-color: aqua;
-    align-items: end;
-}
-
-.social-media-links{
-    width: 20px;
-    height: 20px;
-    background-color: antiquewhite;
-}
-*/
-
-
-/*
-
-.footer-main {
-    width: 100%;
-    padding: 60px 0 100px;
-    background-color:#474954;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 300px;
-}
-
-.footer-main img {
-    display: flex;
-    
-}
-
-.footer-main p {
-    display: inline-block;
-}
-
-
-/* SOCIAL MEDIA SECTION */
-/*
-.footer-social-media {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    z-index: 1000;
-}
-
-.social-media-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.social-media-icon {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-}
-
-
-
-/* SOCIAL MEDIA SECTION END */
-
-/*
-.footer-sitemap {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-top: auto;
-}
-
-.footer-about-me {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: auto;
-}
-
-
-.footer-sitemap ul:nth-child(1) {
-    flex-basis: 200px;
-}
-
-.footer-sitemap ul:nth-child(2) {
-    text-align: center;
-}
-
-.footer-sitemap ul:nth-child(2) li{
-    text-align: center;
-    margin: 5px 0;
-}
-
-.footer-sitemap ul:nth-child(2) li a {
-    color: whit;
-}
-*/
-
-
 /* FOOTER SECTION END */
 
 
+/* SCROLL ANIMATION */
+
+
+/* SCROLL ANIMATION FOR PROJECTS CONTAINER */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.projects-container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* SCROLL ANIMATION END */
+
 /* RESPONSIVE DESIGNS */
+
 
