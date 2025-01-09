@@ -1,3 +1,19 @@
+:root {
+    --base-color: #fff;
+    --txt-color: #000;
+    --links-color: #808080;
+    --txt-decoration: #b5b5b5;
+    --footer-background-color: #474954;
+}
+
+.darkmode {
+    --base-color: #000;
+    --txt-color: #fff;
+    --links-color: #808080;
+    --txt-decoration: #b5b5b5;
+    --footer-background-color: #474954;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +21,18 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--base-color);
+    color: var(--txt-color);
+}
+
 
 a {
     cursor: pointer;
+}
+
+p {
+    color: var(--txt-color);
 }
 
 
@@ -16,7 +41,7 @@ a {
 .header-main {
     width: 100%;
     height: 60px;
-    background-color: #fff;
+    background-color: var(--base-color);
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -34,6 +59,39 @@ a {
     height: 40px;
     align-self: center;
 }
+
+/* DARK MODE BUTTON */
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--footer-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+#theme-switch:hover {
+    cursor: pointer;
+}
+
+/* DARKMODE BUTTON END */
 
 .header-main-nav {
 width: fit-content;
@@ -60,10 +118,10 @@ text-align: center;
 }
 
 .header-main-nav ul li a:hover {
-    color: grey;
+    color: var(--links-color);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-decoration-color: var(--txt-decoration);
 }
 
 /* NAVIGATION BAR END */
@@ -72,7 +130,6 @@ text-align: center;
 /* ABOUT ME SECTION */
 
 .about-me p {
-    color: black;
     font-size: 0.8rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -167,7 +224,7 @@ text-align: center;
 .footer-main {
     width: 100%;
     padding: 60px 0 100px;
-    background-color: #474954;
+    background-color: var(--footer-background-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,7 +261,7 @@ text-align: center;
 }
 
 .footer-sitemap ul a {
-    color: rgb(181, 181, 181);
+    color: var(--txt-decoration);
     text-decoration: underline;
     text-underline-offset: 0.2rem;
 }
