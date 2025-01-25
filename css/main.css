@@ -1,6 +1,7 @@
 :root {
     --base-color: #fff;
     --txt-color: #000;
+    --project-color:#000;
     --links-color: #808080;
     --txt-decoration: #b5b5b5;
     --footer-background-color: #474954;
@@ -9,6 +10,7 @@
 .darkmode {
     --base-color: #000;
     --txt-color: #fff;
+    --project-color:#000;
     --links-color: #808080;
     --txt-decoration: #b5b5b5;
     --footer-background-color: #474954;
@@ -44,8 +46,9 @@ p {
     background-color: var(--base-color);
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .header-main-logo {
@@ -202,7 +205,11 @@ text-align: center;
     background-color: beige;
     /* Remove flex properties from individual boxes */
     margin: 10px;
+    color: var(--project-color);
+    padding: 5px 0 0 10px;
 }
+
+
 
 
 /* WRAPPER */
@@ -298,4 +305,6 @@ text-align: center;
 
 /* RESPONSIVE DESIGNS */
 
+@media () {
 
+}
